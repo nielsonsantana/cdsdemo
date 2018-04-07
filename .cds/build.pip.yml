@@ -7,5 +7,4 @@ jobs:
   - script : mvn package
   - artifactUpload : target/*.jar 
   requirements:
-  - binary: mvn
   - binary: git
