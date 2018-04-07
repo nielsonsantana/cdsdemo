@@ -1,7 +1,7 @@
 version: v1.0
 name: cdsdemo
 vcs_server: github
-repo: sguiheux/cdsdemo
+repo: yesnault/cdsdemo
 keys:
   app-pgp-github:
     type: pgp
