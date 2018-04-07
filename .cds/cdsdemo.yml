@@ -8,6 +8,5 @@ payload:
   git.hash.before: ""
   git.message: ""
   git.repository: yesnault/cdsdemo
-application: cdsdemo
 pipeline_hooks:
 - type: RepositoryWebHook
