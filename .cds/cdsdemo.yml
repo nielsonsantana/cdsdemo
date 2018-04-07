@@ -3,7 +3,7 @@ version: v1.0
 pipeline: build-pipeline
 payload:
   git.author: ""
-  git.branch: ""
+  git.branch: "master"
   git.hash: ""
   git.hash.before: ""
   git.message: ""
