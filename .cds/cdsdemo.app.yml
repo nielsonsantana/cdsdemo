@@ -4,4 +4,4 @@ vcs_server: github
 repo: nielsonsantana/cdsdemo
 vcs_branch: '{{.git.branch}}'
 vcs_default_branch: master
-# vcs_pgp_key: app-pgp-github
+vcs_ssh_key: proj-ssh-cdshello
