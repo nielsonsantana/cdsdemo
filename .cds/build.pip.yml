@@ -4,7 +4,8 @@ jobs:
 - job: First job
   steps:
   - checkout: '{{.cds.workspace}}'
-  - script : mvn package
-  - artifactUpload : target/*.jar 
+  - script: mvn package
+  - artifactUpload:
+      path: '{{.cds.workspace}}target/*.jar'
   requirements:
   - binary: git
