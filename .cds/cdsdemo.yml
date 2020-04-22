@@ -1,7 +1,0 @@
-name: cdsdemo
-version: v1.0
-pipeline: build-pipeline
-payload:
-  git.branch: "master"
-  git.repository: nielsonsantana/cdsdemo
-application: cdsdemo
