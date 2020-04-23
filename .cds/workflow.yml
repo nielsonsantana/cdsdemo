@@ -19,11 +19,11 @@ workflow:
     #     payload: '{}'
     #     timezone: UTC
 hooks:
-- type: Git Repository Poller
-  config:
-    payload: '{}'
-- type: WebHook
-  method: GET
-  url: https://www.google.com.br
+  build:
+  - type: Git Repository Poller
+    config:
+      payload: '{}'
+  - type: WebHook
+    url: https://www.google.com.br
 metadata:
   default_tags: git.branch,git.author
