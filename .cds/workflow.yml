@@ -12,20 +12,20 @@ workflow:
       git.message: ""
       git.repository: nielsonsantana/cdsdemo
       git.tag: ""
-    pipeline_hooks:
-    - type: Git Repository Poller
+    # pipeline_hooks:
+    # - type: Git Repository Poller
     # pipeline_hooks:
     # - type: Scheduler
     #   config:
     #     cron: 0/30 * * * *
     #     payload: '{}'
     #     timezone: UTC
-# hooks:
-#   build:
-#   - type: Git Repository Poller
-#     config:
-#       payload: '{}'
-#   - type: RepositoryWebHook
-#     repo: nielsonsantana/cdsdemo
+hooks:
+  build:
+  - type: Git Repository Poller
+    config:
+      payload: '{}'
+  - type: RepositoryWebHook
+    repo: nielsonsantana/cdsdemo
 # metadata:
 #   default_tags: git.branch,git.author
