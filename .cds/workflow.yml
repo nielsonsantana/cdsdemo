@@ -5,8 +5,13 @@ workflow:
     application: cdsdemo
     pipeline: build-pipeline
     payload:
-      git.branch: "master"
+      git.author: ""
+      git.branch: master
+      git.hash: ""
+      git.hash.before: ""
+      git.message: ""
       git.repository: nielsonsantana/cdsdemo
+      git.tag: ""
     # pipeline_hooks:
     # - type: Scheduler
     #   config:
