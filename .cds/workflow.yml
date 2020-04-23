@@ -22,10 +22,9 @@ workflow:
     #     timezone: UTC
 hooks:
   build:
-  - type: Git Repository Poller
-    config:
-      payload: '{}'
-  - type: RepositoryWebHook
-    repo: nielsonsantana/cdsdemo
+    - type: RepositoryWebHook
+    - type: Git Repository Poller
+  #   config:
+  #     payload: '{}'
 # metadata:
 #   default_tags: git.branch,git.author
