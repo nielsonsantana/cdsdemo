@@ -19,7 +19,6 @@ workflow:
     #     payload: '{}'
     #     timezone: UTC
 hooks:
-  build:
   - type: Git Repository Poller
     config:
       payload: '{}'
