@@ -8,8 +8,10 @@ workflow:
       git.branch: "master"
       git.repository: nielsonsantana/cdsdemo
     pipeline_hooks:
-    - type: Scheduler
-      config:
-        cron: 0/30 * * * *
-        payload: '{}'
-        timezone: UTC
+    - type: Git Repository Poller
+    # pipeline_hooks:
+    # - type: Scheduler
+    #   config:
+    #     cron: 0/30 * * * *
+    #     payload: '{}'
+    #     timezone: UTC
