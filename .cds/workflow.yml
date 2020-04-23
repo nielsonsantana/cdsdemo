@@ -3,7 +3,7 @@ version: v1.0
 workflow:
   build:
     application: cdsdemo
-    pipeline: build-pipeline
+    pipeline: build-step
     payload:
       git.author: ""
       git.branch: master
